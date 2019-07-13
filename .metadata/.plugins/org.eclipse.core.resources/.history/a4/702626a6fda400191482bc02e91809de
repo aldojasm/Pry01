@@ -1,0 +1,16 @@
+package com.family.project.service;
+
+import java.util.List;
+
+import com.family.project.entity.Parent;
+
+public interface ParentServ {
+	
+	//Call Class
+	Parent save(Parent entity);
+	Parent update(Parent entity);
+	void delete (Long id);
+	void get (Long id);
+	List<Parent> findAll(Parent entity);
+
+}

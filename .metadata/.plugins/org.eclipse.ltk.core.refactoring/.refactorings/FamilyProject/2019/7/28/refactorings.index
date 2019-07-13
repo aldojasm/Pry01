@@ -1,0 +1,32 @@
+1562957742051	Rename type 'FamiliesMembers'
+1562964261203	Rename type 'Families_Members'
+1562964289614	Rename type 'Families'
+1562964335946	Rename type 'Parents'
+1562964360063	Rename type 'Students'
+1562964381746	Rename type 'Family_Member'
+1562964408963	Rename type 'Families_Members'
+1562964453179	Rename type 'FamiliesServices'
+1562964528470	Rename package 'com.family.project.entities'
+1562964595648	Rename package 'com.family.project.service_implememtation'
+1562964872409	Copy compilation unit
+1562964880367	Copy compilation unit
+1562964886457	Copy compilation unit
+1562964923608	Copy compilation unit
+1562965541642	Rename package 'com.family.project.respository'
+1562965553557	Rename type 'FamilyRepository'
+1562965565589	Rename type 'FamilyMember'
+1562965594027	Delete element
+1562965605695	Rename type 'Parent'
+1562965612682	Rename type 'Student'
+1562966260836	Rename type 'FamilyService'
+1562966277780	Copy compilation unit
+1562966349471	Copy compilation unit
+1562966364660	Copy compilation unit
+1562968415077	Copy compilation unit
+1562968430469	Copy compilation unit
+1562968447324	Copy compilation unit
+1562978388870	Rename compilation unit 'FamilyControler.java'
+1562979390375	Delete element
+1562980394212	Copy compilation unit
+1562980754699	Copy compilation unit
+1562981000831	Copy compilation unit

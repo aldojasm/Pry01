@@ -1,0 +1,13 @@
+package com.family.project.entities;
+
+import javax.persistence.Entity;
+
+
+@Entity
+public class Families_Members {
+	
+	
+	
+	
+
+}

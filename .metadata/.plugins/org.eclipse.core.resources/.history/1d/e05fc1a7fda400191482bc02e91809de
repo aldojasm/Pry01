@@ -1,0 +1,16 @@
+package com.family.project.service;
+
+import java.util.List;
+
+import com.family.project.entity.FamilyMember;
+
+public interface FamilyMemberServ {
+	
+	//Call Class
+	FamilyMember save(FamilyMember enity);
+	FamilyMember update(FamilyMember entity);
+	void delete (Long id);
+	void get (Long id);
+	List<FamilyMember> findAll(FamilyMember entity);
+
+}

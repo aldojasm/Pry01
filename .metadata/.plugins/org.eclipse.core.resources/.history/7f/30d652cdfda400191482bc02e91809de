@@ -1,0 +1,15 @@
+package com.family.project.service;
+
+import java.util.List;
+
+import com.family.project.entity.Student;
+
+public interface StudentServ {
+	
+	//Call Class
+	Student save(Student entity);
+	Student update(Student entity);
+	void delete (Long id);
+	List<Student> findAll(Student entity);
+
+}

@@ -1,0 +1,44 @@
+package com.family.project.serviceImp;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.family.project.entity.Parent;
+import com.family.project.repository.ParentRep;
+import com.family.project.service.ParentServ;
+
+@Service
+public class ParentServImp implements ParentServ{
+	@Autowired
+	ParentRep parentRep;
+
+	@Override
+	public Parent save(Parent entity) {
+		return parentRep.save(entity);	
+	}
+
+	@Override
+	public Parent update(Parent entity) {
+		return parentRep.save(entity);
+	}
+
+	@Override
+	public void delete(Long id) {
+		parentRep.deleteById(id);
+		
+	}
+
+	@Override
+	public void get(Long id) {
+		parentRep.findById(id);
+		
+	}
+
+	@Override
+	public List<Parent> findAll(Parent entity) {
+		return	parentRep.findAll();
+	}
+
+}

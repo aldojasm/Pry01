@@ -1,0 +1,34 @@
+package com.family.project.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="Parents")
+public class Parents {
+	
+	//Variable Column
+	@Id
+	@Column(name="parent_id")
+	private long parent_id;
+	
+	@Column(name="gender")
+	private String gender;
+	
+	@Column(name="first_name")
+	private String first_name;
+	
+	@Column(name="middle_name")
+	private String middle_name;
+	
+	@Column(name="last_name")
+	private String last_name;
+	
+	@Column(name="other_parent_details")
+	private String other_parent_details;
+
+}

@@ -1,0 +1,81 @@
+package com.family.project.entities;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="Families_Members")
+public class Families_Members implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	
+	//Variable Column
+	@Id
+	@Column(name="family_member_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private short family_member_id;
+	
+	@Column(name="family_id")
+	private short family_id;
+	
+	@Column(name="parent_or_student_member")
+	private String parent_or_student_member;
+	
+	@Column(name="parent_id")
+	private short parent_id;
+	
+	@Column(name="student_id")
+	private short student_id;
+	
+	
+	//Method Getter and Setter
+	public short getFamily_member_id() {
+		return family_member_id;
+	}
+
+	public void setFamily_member_id(short family_member_id) {
+		this.family_member_id = family_member_id;
+	}
+
+	public short getFamily_id() {
+		return family_id;
+	}
+
+	public void setFamily_id(short family_id) {
+		this.family_id = family_id;
+	}
+
+	public String getParent_or_student_member() {
+		return parent_or_student_member;
+	}
+
+	public void setParent_or_student_member(String parent_or_student_member) {
+		this.parent_or_student_member = parent_or_student_member;
+	}
+
+	public short getParent_id() {
+		return parent_id;
+	}
+
+	public void setParent_id(short parent_id) {
+		this.parent_id = parent_id;
+	}
+
+	public short getStudent_id() {
+		return student_id;
+	}
+
+	public void setStudent_id(short student_id) {
+		this.student_id = student_id;
+	}
+}

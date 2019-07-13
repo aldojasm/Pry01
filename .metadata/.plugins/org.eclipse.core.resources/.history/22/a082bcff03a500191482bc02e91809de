@@ -1,0 +1,44 @@
+package com.family.project.serviceImp;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.family.project.entity.FamilyMember;
+import com.family.project.repository.FamilyMemberRep;
+import com.family.project.repository.FamilyRep;
+import com.family.project.service.FamilyMemberServ;
+
+@Service
+public class FamilyMemberServImp implements FamilyMemberServ{
+	@Autowired
+	FamilyMemberRep familyMemberRep;
+	
+	@Override
+	public FamilyMember save(FamilyMember enity) {
+		return familyMemberRep.save(enity);
+	}
+
+	@Override
+	public FamilyMember update(FamilyMember entity) {
+		return null;
+	}
+
+	@Override
+	public void delete(Long id) {
+		
+	}
+
+	@Override
+	public void get(Long id) {
+		
+	}
+
+	@Override
+	public List<FamilyMember> findAll(FamilyMember entity) {
+		return null;
+	}
+
+
+}

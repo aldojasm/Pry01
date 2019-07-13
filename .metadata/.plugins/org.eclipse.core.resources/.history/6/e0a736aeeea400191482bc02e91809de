@@ -1,0 +1,8 @@
+package com.family.project.service;
+
+public interface ParentServ {
+	
+	//Call Class
+	
+
+}

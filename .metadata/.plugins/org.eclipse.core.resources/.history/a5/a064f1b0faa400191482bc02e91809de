@@ -1,0 +1,48 @@
+package com.family.project.serviceImp;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.family.project.entity.Student;
+import com.family.project.repository.StudentRep;
+import com.family.project.service.StudentServ;
+
+@Service
+public class StudentServImp implements StudentServ{
+	@Autowired
+	StudentRep studentRep;
+	
+	@Override
+	public Student save(Student entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Student update(Student entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void get(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Student> findAll(Student entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

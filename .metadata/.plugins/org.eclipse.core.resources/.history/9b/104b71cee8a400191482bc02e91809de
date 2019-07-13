@@ -1,0 +1,5 @@
+package com.family.project.respository;
+
+public interface FamilyMember {
+
+}

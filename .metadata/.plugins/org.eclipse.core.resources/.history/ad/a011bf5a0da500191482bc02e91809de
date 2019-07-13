@@ -1,0 +1,44 @@
+package com.family.project.controler;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.family.project.entity.Student;
+import com.family.project.serviceImp.StudentServImp;
+
+@RestController
+@RequestMapping("/Student")
+public class StudentCon {
+	@Autowired
+	StudentServImp studentServImp;
+	
+	//
+	@PostMapping("/Save")
+	public Student Save(@RequestBody Student family) {
+		return studentServImp.save(family);	
+	}
+	
+	@PutMapping("/Update")
+	public Student Update(@RequestBody Student family) {
+		return studentServImp.update(family);
+	}
+
+	@DeleteMapping("/Delete/{id}")
+		public void Delete(@PathVariable("id") Long id) {
+		studentServImp.delete(id);			
+	}
+			
+	@GetMapping("/Get")
+	public java.util.List<Student> findAll(){
+		return studentServImp.findAll(null);		
+	}
+	
+
+}
